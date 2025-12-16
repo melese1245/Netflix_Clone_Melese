@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -34,17 +34,56 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
+} */
 
-.card {
+/* .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
-}
+} */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
+}
+
+.APP {
+  text-align: center;
+} */
+.container {
+  height: 100vh;
+  /* Full screen height */
+  display: flex;
+  justify-content: flex-start;
+  /* Move content to the top */
+  align-items: center;
+  /* Center horizontally (optional) */
+  padding-top: 20px;
+  /* Optional spacing from the top */
+  font-size: 2rem;
+}
+
+/* Full height for html, body, and root */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex column layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* full viewport height */
+}
+
+/* Main content expands to push footer to bottom */
+.main-content {
+  flex: 1;
+  /* grows to fill space between header and footer */
+  padding-top: 70px;
+  /* offset for fixed header */
 }

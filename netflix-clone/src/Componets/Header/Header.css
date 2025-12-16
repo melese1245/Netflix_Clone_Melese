@@ -1,0 +1,100 @@
+/* Outer container — fully transparent */
+.header-outer-container {
+  width: 100%;
+  background-color: transparent;
+  /* Fully transparent */
+  color: white;
+  position: fixed;
+  /* Stays at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Inner container for left & right sections */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Left section */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo without box or background */
+.header-left .logo {
+  width: 100px;
+  margin-right: 20px;
+  background: none;
+  /* remove any background */
+  border: none;
+  /* remove border */
+  box-shadow: none;
+  /* remove shadow */
+  transition: transform 0.3s ease;
+}
+
+/* Optional: slight zoom on hover */
+.header-left .logo:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #e50914;
+  /* Netflix red */
+}
+
+.nav-links li::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #e50914;
+  width: 0%;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* Right section */
+.header-right .nav-icons {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  align-items: center;
+}
+
+.header-right .nav-icons li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: transform 0.2s ease;
+}
+
+.header-right .nav-icons li:hover {
+  transform: scale(1.2);
+  color: #e50914;
+}
