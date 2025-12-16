@@ -1,0 +1,20 @@
+{
+  "name": "netflix_clone_melese",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melese1245/Netflix_Clone_Melese.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melese1245/Netflix_Clone_Melese/issues"
+  },
+  "homepage": "https://github.com/melese1245/Netflix_Clone_Melese#readme"
+}
